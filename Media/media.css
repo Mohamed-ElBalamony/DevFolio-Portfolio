@@ -1,0 +1,15 @@
+@media screen and (max-width:575px) {
+    .px-sm-8 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .px-xsm-0 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .fs-sm-32 {
+        font-size: 2rem;
+    }
+}

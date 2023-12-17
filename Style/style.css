@@ -1,0 +1,630 @@
+:root {
+    --body-color : #f5f5f5;
+    --main-padding-top : 4rem;
+    --main-padding-bottom : 4rem;
+    --main-margin-bottom : 2rem;
+    --secondary-margin-bottom : 3rem;
+    --tertiary-margin-bottom : 4rem;
+    --progress-bar-bg : #0d6efd; 
+    --main-padding-y : 2.5rem;
+    --main-padding-x : 1.3rem;
+    --main-border-radius : 1rem;
+    --main-font-size : 2rem;
+    --sub-tittle-sont-size :1.2rem;
+    --secondary-padding-y : 2rem;
+    --secondary-padding-x : 0.75rem;
+    --main-border-color : #0d6efd;
+    --width-32-rem : 2rem;
+    --height-32-rem : 2rem;
+    --input-horizontal-padding : 0.9375rem;
+    --input-vertical-padding:0.625rem;
+    --button-horizontal-padding : 1.5rem;
+    --title-sont-size : 3rem;
+}
+
+body {
+    background: var(--body-color);
+}
+
+.bg-slider {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Image/hero-bg.jpg) center / cover;
+    background-attachment: fixed;
+}
+
+nav .container  ul li  a.item::before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0.5rem;
+    bottom: -2px;
+    border-radius: 100vh;
+    transition: width .5s;
+}
+
+nav .container ul li a:hover::before {
+    width: 50%;
+}
+
+.typing::after {
+    content: " |";
+    animation: typing 10s infinite;
+    font-weight: bolder;
+}
+
+@keyframes typing {
+    0% {
+        content: " |";
+    }
+
+    1.278% {
+        content: "D|";
+    }
+
+    2.556% {
+        content: "De|";
+    }
+
+    3.834% {
+        content: "Des|";
+    }
+
+    5.112% {
+        content: "Desi|";
+    }
+
+    6.39% {
+        content: "Desin|";
+    }
+
+    7.668% {
+        content: "Desing|";
+    }
+
+    8.946% {
+        content: "Desinge|";
+    }
+
+    10.224% {
+        content: "Desinger|";
+    }
+
+    11.502% {
+        content: "Desinger|";
+    }
+
+    12.78% {
+        content: "Desinge|";
+    }
+
+    14.058% {
+        content: "Desing|";
+    }
+
+    15.336% {
+        content: "Desin|";
+    }
+
+    16.614% {
+        content: "Desi|";
+    }
+
+    17.892% {
+        content: "Des|";
+    }
+
+    19.17% {
+        content: "De|";
+    }
+
+    20.448% {
+        content: "Dev|";
+    }
+
+    21.726% {
+        content: "Deve|";
+    }
+
+    23.004% {
+        content: "Devel|";
+    }
+
+    24.282% {
+        content: "Develo|";
+    }
+
+    25.56% {
+        content: "Develop|";
+    }
+
+    26.838% {
+        content: "Develope|";
+    }
+
+    28.116% {
+        content: "Developer|";
+    }
+
+    29.394% {
+        content: "Developer|";
+    }
+
+    30.672% {
+        content: "Developer|";
+    }
+
+    31.95% {
+        content: "Develope|";
+    }
+
+    33.228% {
+        content: "Develop|";
+    }
+
+    34.506% {
+        content: "Develo|";
+    }
+
+    35.784% {
+        content: "Devel|";
+    }
+
+    37.062% {
+        content: "Deve|";
+    }
+
+    38.34% {
+        content: "Dev|";
+    }
+
+    39.618% {
+        content: "De|";
+    }
+
+    40.896% {
+        content: "D|";
+    }
+
+    42.174% {
+        content: "|";
+    }
+
+    43.452% {
+        content: "F|";
+    }
+
+    44.73% {
+        content: "Fr|";
+    }
+
+    46.008% {
+        content: "Fre|";
+    }
+
+    47.286% {
+        content: "Free|";
+    }
+
+    48.564% {
+        content: "Freel|";
+    }
+
+    49.842% {
+        content: "Freela|";
+    }
+
+    51.12% {
+        content: "Freelan|";
+    }
+
+    52.398% {
+        content: "Freelanc|";
+    }
+
+    53.676% {
+        content: "Freelance|";
+    }
+
+    54.954% {
+        content: "Freelancer|";
+    }
+
+    56.232% {
+        content: "Freelancer|";
+    }
+
+    57.51% {
+        content: "Freelance|";
+    }
+
+    58.788% {
+        content: "Freelanc|";
+    }
+
+    60.066% {
+        content: "Freelan|";
+    }
+
+    61.344% {
+        content: "Freela|";
+    }
+
+    62.622% {
+        content: "Freel|";
+    }
+
+    63.9% {
+        content: "Free|";
+    }
+
+    65.178% {
+        content: "Fre|";
+    }
+
+    66.456% {
+        content: "Fr|";
+    }
+
+    67.734% {
+        content: "F|";
+    }
+
+    69.012% {
+        content: "|";
+    }
+
+    70.29% {
+        content: "P|";
+    }
+
+    71.568% {
+        content: "Ph|";
+    }
+
+    72.846% {
+        content: "Pho|";
+    }
+
+    74.124% {
+        content: "Phot|";
+    }
+
+    75.402% {
+        content: "Photo|";
+    }
+
+    76.68% {
+        content: "Photog|";
+    }
+
+    77.958% {
+        content: "Photogr|";
+    }
+
+    79.236% {
+        content: "Photogra|";
+    }
+
+    80.514% {
+        content: "Photograp|";
+    }
+
+    81.792% {
+        content: "Photograph|";
+    }
+
+    83.07% {
+        content: "Photographe|";
+    }
+
+    84.348% {
+        content: "Photographer|";
+    }
+
+    85.626% {
+        content: "Photographe|";
+    }
+
+    86.904% {
+        content: "Photograph|";
+    }
+
+    88.182% {
+        content: "Photograp|";
+    }
+
+    89.46% {
+        content: "Photogra|";
+    }
+
+    90.738% {
+        content: "Photogr|";
+    }
+
+    92.016% {
+        content: "Photog|";
+    }
+
+    93.294% {
+        content: "Photo|";
+    }
+
+    94.572% {
+        content: "Phot|";
+    }
+
+    95.85% {
+        content: "Pho|";
+    }
+
+    97.128% {
+        content: "Ph|";
+    }
+
+    98.406% {
+        content: "P|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+
+
+.pt-64 {
+    padding-top: var(--main-padding-top);
+}
+
+.pb-64 {
+    padding-bottom: var(--main-padding-bottom);
+}
+
+.mb-32 {
+    margin-bottom: var(--main-margin-bottom);
+}
+
+
+.mb-48 {
+    margin-bottom: var(--secondary-margin-bottom);
+}
+
+@font-face {
+    src: url(../Fonts/Assistant-VariableFont_wght.ttf);
+    font-family: "main-family";
+}
+
+body {
+    font-family: main-family;
+}
+
+.line-start::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 80px;
+    height: 3px;
+    background: var(--progress-bar-bg);
+}
+
+.about {
+    box-shadow: 0 1px 2px 0 rgba(0 0 0 / 6%) , 0 2px 5px 0 rgba(0 0 0 / 20%);
+}
+
+.line-mf::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    background: var(--progress-bar-bg);
+    position: absolute;
+    bottom: -20px;
+    transform: translate(-50%,-50%);
+}
+
+.mb-64 {
+    margin-bottom: var(--tertiary-margin-bottom);
+}
+
+.w-100-r {
+    width: 6.25rem;
+}
+
+.h-100-r {
+    height: 6.25rem;
+} 
+
+
+.py-40 {
+    padding-top: var(--main-padding-y);
+    padding-bottom: var(--main-padding-y);
+}
+
+.px-20 {
+    padding-right: var(--main-padding-x);
+    padding-left: var(--main-padding-x);
+}
+
+.br-radius-16 {
+    border-radius: var(--main-border-radius);
+}
+
+.circle-shadow {
+    border: 10px solid var(--progress-bar-bg);
+    transition: background 1s , border 1s;
+}
+
+.service .container .inner:hover .circle-shadow {
+    background: var(--progress-bar-bg);
+    border: 10px solid #cfe2ff;
+}
+
+.text-hover-white {
+    transition: color 1s;
+}
+
+.service .container .inner:hover .text-hover-white {
+    color: #fff;
+}
+
+.service .container .inner {
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+
+.history {
+    background: linear-gradient(rgba(0,120,255,0.7),rgba(0,120,255,0.7)), url(../Image/counters-bg.jpg) top center / cover;
+    background-attachment: fixed;
+}
+
+.history .container .counter div > div {
+    border: 10px solid #cfe2ff;
+}
+
+.fs-32 {
+    font-size: var(--main-font-size);
+}
+
+.fs-19 {
+    font-size: var(--sub-tittle-sont-size);
+}
+
+.h-50-r {
+    height: 3.125rem;
+}
+
+.w-50-r {
+    width: 3.125rem;
+}
+
+.py-32 {
+    padding-top: var(--secondary-padding-y);
+    padding-bottom: var(--secondary-padding-y);
+}
+
+.px-12 {
+    padding-left: var(--secondary-padding-x);
+    padding-right: var(--secondary-padding-x);
+}
+
+.portfolio .container .card {
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+
+.portfolio .container .card  img {
+    transition: transform 1s;
+}
+
+
+.portfolio .container .card:hover img {
+    transform: scale(1.2);
+}
+
+.testmonial {
+    background: linear-gradient(rgba(0,120,255,0.7),rgba(0,120,255,0.7)), url(../Image/overlay-bg.jpg) top center / cover;
+    background-attachment: fixed;
+}
+
+.w-32-r {
+    width: var(--width-32-rem);
+}
+
+.h-32-r {
+    height: var(--height-32-rem);
+}
+
+
+.py-10 {
+    padding-top: var(--input-vertical-padding);
+    padding-bottom: var(--input-vertical-padding);
+}
+
+.px-15 {
+    padding-left: var(--input-horizontal-padding);
+    padding-right: var(--input-horizontal-padding);
+}
+
+.contact {
+    background: linear-gradient(rgba(0,120,255,0.7),rgba(0,120,255,0.7)), url(../Image/overlay-bg.jpg) top center / cover;
+    background-attachment: fixed;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+
+.contact .contact-content .circle-shadow {
+    border: solid 3px var(--main-border-color);
+    transform: border 1s, background 1s;
+}
+
+.contact .contact-content .circle-shadow:hover {
+    background: var(--progress-bar-bg);
+    border: solid 3px #cfe2ff;
+}
+
+.contact .contact-content .circle-shadow:hover .text-hover-white {
+    color: #fff;
+}
+
+.contact .contact-content .circle-shadow .text-hover-white {
+    transition: color 1s;
+}
+
+.px-24 {
+    padding-left: var(--button-horizontal-padding);
+    padding-right: var(--button-horizontal-padding);
+}
+
+footer {
+    background: #0062d3;
+}
+
+.py-24 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.contact .container button {
+    background: #0062d3;
+    border: solid 4px transparent;
+    transition: background 0.4s, border 0.4s;
+}
+
+.contact .container button:hover {
+    background: #0d6efd;
+    border: solid 4px #cfe2ff;
+}
+
+.fs-48 {
+    font-size: var(--title-sont-size);
+}
+
+.back-to-top {
+    right: 15px;
+    bottom: 15px;
+    z-index: 50;
+    background: #0d6efd;
+    transition: background .5s;
+}
+
+.back-to-top:hover {
+    background: #0078ff;
+}
+
+.h-40-r {
+    height: 2.5rem;
+}
+
+.w-40-r {
+    width: 2.5rem;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #fff;
+    border-left: 2px solid #eee;
+    box-shadow: 0px 0px 21px 0px #0003 inset;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000;
+    box-shadow: 0px 0px 10px 0px #eeeeee8c inset;
+    border-radius: 100vh;
+}
